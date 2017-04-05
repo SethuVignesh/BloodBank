@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fa6a6a"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Type"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnAp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A+" />
+
+            <Button
+                android:id="@+id/btnAn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-" />
+
+            <Button
+                android:id="@+id/btnBp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B+" />
+
+            <Button
+                android:id="@+id/btnBn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B-" />
+
+            <Button
+                android:id="@+id/btnABp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AB+" />
+
+            <Button
+                android:id="@+id/btnABn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AB-" />
+
+            <Button
+                android:id="@+id/btnOp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O+" />
+
+            <Button
+                android:id="@+id/btnOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O-" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView1234567890"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Distance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.newtra.bloodbank.MySeekBar
+            android:id="@+id/seekBarDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/lVDonors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
